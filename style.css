@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+   align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 20px;
+}
+.menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 600px;
+}
+
+.menu ul{
+    display: inline-flex;
+
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 8px 15px;
+    transition: all 0.3s ease-out;
+}
+.menu ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.image{
+    background: url(./images/layout.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.image::before{
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.center{
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+   
+    padding: 0 20px;
+    text-align: center;
+    transform: translate(-50% , -50%);
+}
+
+.center .title{
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+.center .sub_title{
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+}
+.center .btns{
+    margin-top: 20px;
+
+}
+.center .btns button{
+    height: 55px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.center .btns button:first-child{
+    color: white;
+    background: none;
+}
+.center .btns button:first-child:hover{
+    color: white;
+    background-color: black;
+}
