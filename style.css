@@ -110,3 +110,30 @@ nav .menu{
     color: white;
     background-color: black;
 }
+
+@media(max-width:750px){
+    .menu ul{
+        display:inline-block;
+    }
+    .menu ul li a{
+        font-size: 15px;
+    }
+    .menu ul li a:hover{
+    background: none;
+    }
+    .center .title{
+        font-size: 25px;
+        
+    }
+    .center .sub_title{
+        font-size: 15px;
+    }
+    .center .btns button{
+        height: 35px;
+        width: 135px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 120px;
+        margin-left: 130px;
+    }
+}
